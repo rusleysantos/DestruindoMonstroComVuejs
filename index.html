@@ -35,7 +35,7 @@
                 <div class="life-bar">
 
                     <div class="life" :class="{danger: monsterLife < 20}"
-                         :style="{width: monsterLife + '%'}"></div>
+                    :style="{width: monsterLife + '%'}"></div>
 
                 </div>
 
@@ -45,12 +45,23 @@
 
         </div>
 
-        <div class="panel result">
-            2
+        <div v-if="hasResult" class="panel result">
+            
+            
+            <div v-if="monsterLife == 0" class="win">Você ganhou!</div>
+            <div v-else class="lose">Você perdeu!</div>
+
+            
         </div>
 
         <div class="panel buttons">
-            3
+            <button class="btn attack">Ataque</button>    
+            <button class="btn especial-attack">Ataque Especial</button>
+            <button class="btn heal">Curar</button>
+            <button class="btn give-up">desistir</button>
+            <button class="btn new-game">Iniciar Jogo</button>    
+
+
         </div>
 
         <div class="panel logs">

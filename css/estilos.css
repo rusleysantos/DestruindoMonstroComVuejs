@@ -50,3 +50,67 @@
     background-color: red;
     
 }
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-style:oblique
+}
+
+.result .win{
+    
+    color: green;
+}
+
+.result .lose{
+    
+    color:red
+}
+
+
+/* Area de botões */
+
+.buttons {
+    display: flex;
+    justify-content: center
+}
+
+.btn {
+    
+    padding: 5px 10px;
+    margin: 0px 10px;
+    text-transform:uppercase;
+    border-radius: 5px;
+}
+
+.attack{
+    
+    background-color: brown;
+    color: cornsilk;
+   
+}
+
+.especial-attack{
+    
+    background-color:blueviolet;
+    color: cornsilk;
+}
+
+.heal{
+    
+    background-color: forestgreen;
+    color: cornsilk;
+}
+
+.give-up{
+    
+    background-color: skyblue;
+    color: cornsilk;
+
+}
+
+.new-game{
+    
+    background-color: blue;
+    color: cornsilk;
+}
