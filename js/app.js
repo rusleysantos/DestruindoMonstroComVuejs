@@ -20,7 +20,7 @@ new Vue({
             this.running = true,
             this.playerLife = 100,
             this.monsterLife = 100,
-            this.log = []
+            this.logs = []
             
         },
         
